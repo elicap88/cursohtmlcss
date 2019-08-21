@@ -37,3 +37,51 @@ header{
     background-size: cover;
 
 }
+
+
+#contenedor-tiuloflex{
+  display: flex;
+  justify-content: center;
+  color: white;
+  margin: 18vh ;
+  font-size: 25px;
+  
+
+}
+
+#subtitulo{
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 35px;
+    text-align: center;
+
+}
+
+h1{
+    margin: 0;
+}
+
+.contenedor-titulo{
+    text-align: center;
+}
+
+.contenedor-titulo a{
+    font-size: 14px;
+    color:#fff;
+    background: #5cb8ff;
+    padding: 14px 24px;
+    width: 128px;
+    display: inline;
+
+
+}
+
+p.logo{
+    color: #fff;
+    font-size: 20px;
+}
+
+nav ul li{
+    color: #fff;
+}
