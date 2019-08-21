@@ -1,0 +1,39 @@
+body{
+   margin:0 ;
+   font-family: 'Poppins', sans-serif;
+}
+
+header .contenedor {
+ display: flex;
+ justify-content: space-around;
+
+}
+
+header ul{
+    display: flex;
+
+}
+
+header ul li{
+    list-style: none;
+    margin-right: 15px;
+
+}
+
+header a{
+    text-decoration: none;
+}
+
+.contenedor{
+max-width: 1280px;
+width: 90%;
+
+
+}
+
+header{
+    background: linear-gradient(rgba(84,93,220,.9),rgba(96,171,245,.9)),url(../images/download.jpeg);
+    height: 100vh;
+    background-size: cover;
+
+}
