@@ -66,13 +66,13 @@ h1{
     text-align: center;
 }
 
-.contenedor-titulo a{
+.contenedor-titulo a, #sobre-mi a{
     font-size: 14px;
     color:#fff;
     background: #5cb8ff;
     padding: 14px 24px;
     width: 128px;
-    display: inline;
+    display: inline-block;
 
 
 }
@@ -85,3 +85,77 @@ p.logo{
 nav ul li{
     color: #fff;
 }
+
+h3{
+    text-align: center;
+    font-size: 55px;
+    font-weight: normal;
+}
+
+#sobre-mi .contenedor-sobremi{
+display: flex;
+justify-content: space-around;
+}  
+
+#sobre-mi .texto{
+    width: 42%;
+    } 
+
+/*Servicios*/
+
+.contenedor-servicios{
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+}
+
+.servicio{
+    width: 24%;
+    padding: 34px 30px 38px 38px;
+    border-radius: 20px;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+h4{
+    font-size: 30px;
+    margin: 0;
+}
+
+.servicio p{
+  height: 194;  
+ 
+}
+
+.imgI{
+    width: 40px;
+    float: right;
+}
+
+.contenedor-servicios .violeta{
+background: linear-gradient(to top,#5055df,#6d68f3);
+box-shadow: 0 12px 30px 0 rgba(80,85,223, .37);
+}
+
+.contenedor-servicios .celeste{
+    background: linear-gradient(to top,#40a8f9,#5cb8ff);
+    box-shadow: 0 12px 30px 0 rgba(86,163,222, .3);
+}
+
+.ondas{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 315px;
+    height: 160px;
+
+}
+
+button.owl-prev, button.owl-next {
+    font-size: 40px !important;
+}
+
+
+ span {
+        color: #44aaf9;
+    }

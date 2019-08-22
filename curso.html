@@ -6,6 +6,8 @@
     <link href="style/estyle1.css" rel="stylesheet">
     <meta charset="UTF-8">
     <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="owl/owl.carousel.min.css">
+     <link rel="stylesheet" href="owl/owl.theme.default.min.css">
 </head>
 
 <body>
@@ -41,12 +43,120 @@
                     <img src="images/compus.jpg">
                 </div>
                 <div class="texto">
+                    <p>Mi nombre es Eliana y soy desarrolladora de Software</p>
+                    <p>He trabajado con tecnologias como Html, Ccs, Javascript</p>
+                    <a href="">Ver mis trabajos</a>
+                </div>
+            </div>
+        </section>
+        <section id="servicios">
+            <div class="contenedor">
+                <h3>Servicios</h3>
+                <div class="contenedor-servicios">
+                    <div class="servicio violeta">
+                        <h4>Diseño web</h4>
+                        <p>El Diseño web es aquella actividad consistente en planificar,
+                            diseñar, mantener y crear páginas web. Se aleja del término
+                            más tradicional del diseño en cuanto a que engloba una gran
+                            variedad de aspectos diferentes diferentes diferentes diferentes</p>
+                        <img class="imgI" src="images/monitor.png">
 
+                    </div>
+                    <div class="servicio celeste">
+                        <h4>Responsive Design </h4>
+                        <p>El diseño web adaptable , es una filosofía de diseño
+                            y desarrollo cuyo objetivo es adaptar la apariencia de las páginas web al dispositivo
+                            que se esté utilizando para visitarlas.</p>
+                        <img class="imgI" src="images/smartphone-call.png">
+
+                    </div>
+                    <div class="servicio violeta">
+                        <h4>SEO</h4>
+                        <p>Resultado de imagen para SEOjosefacchin.com
+                            El posicionamiento en buscadores,
+                            optimización en motores de búsqueda o SEO
+                            es un conjunto de acciones orientadas a mejorar el posicionamiento de un sitio web .</p>
+                        <img class="imgI" src="images/bar-chart.png">
+
+                    </div>
+                    <div class="servicio celeste">
+                        <h4>Autoadministrable</h4>
+                        <p>El Diseño web es aquella actividad consistente en planificar,
+                            diseñar, mantener y crear páginas web. Se aleja del término
+                            más tradicional del diseño en cuanto a que engloba una gran
+                            variedad de aspectos diferentes, como pueden ser el diseño de la interfaz.</p>
+                        <img class="imgI" src="images/management.png">
+
+                    </div>
+                    <div class="servicio violeta">
+                        <h4>Diseño</h4>
+                        <p>El Diseño web es aquella actividad consistente en planificar,
+                            diseñar, mantener y crear páginas web. Se aleja del término
+                            más tradicional del diseño en cuanto a que engloba una gran
+                            variedad de aspectos diferentes, como pueden ser el diseño de la interfaz,
+                            el diseño del material gráfico o incluso la experiencia del usuario con el sitio.</p>
+                        <img class="imgI" src="images/monitor.png">
+
+                    </div>
+                    <div class="servicio celeste">
+                        <h4>Diseño web</h4>
+                        <p>El Diseño web es aquella actividad consistente en planificar,
+                            diseñar, mantener y crear páginas web. Se aleja del término
+                            más tradicional del diseño en cuanto a que engloba una gran
+                            variedad de aspectos diferentes, como pueden ser el diseño de la interfaz,
+                            el diseño del material gráfico o incluso la experiencia del usuario con el sitio.</p>
+                        <img class="imgI" src="images/monitor.png">
+
+                    </div>
                 </div>
             </div>
 
         </section>
+        <section id="mis-trabajos">
+            <div class="contenedor">
+                <h3>Mis trabajos</h3>
+                    <div class="owl-carousel owl-theme">
+                            <div class="item"><h4><img src="images/compu.jpg"></h4></div>
+                            <div class="item"><h4><img src="images/compu.jpg"></h4></div>
+                            <div class="item"><h4><img src="images/compu.jpg"></h4></div>
+                            <div class="item"><h4><img src="images/compu.jpg"></h4></div>
+                            <div class="item"><h4><img src=""></h4></div>
+                            <div class="item"><h4><img src=""></h4></div>
+                            <div class="item"><h4><img src=""></h4></div>
+                            <div class="item"><h4><img src=""></h4></div>
+                            <div class="item"><h4><img src=""></h4></div>
+                            <div class="item"><h4><img src=""></h4></div>
+                            <div class="item"><h4><img src=""></h4></div>
+                            <div class="item"><h4><img src=""></h4></div>
+                        </div>
+            </div>
+        </section>
     </main>
+<script
+    src="https://code.jquery.com/jquery-3.4.1.js"
+    integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
+<script src="owl/owl.carousel.min.js"></script>
+<script>
+    $('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    dots:false,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:4
+        }
+    }
+})
+</script>
 </body>
+
 
 </html>
