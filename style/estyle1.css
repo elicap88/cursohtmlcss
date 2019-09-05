@@ -297,8 +297,58 @@ textarea{
 
 #contacto .contacto-info{
    display: flex;
+   justify-content: space-around;
+   margin-top: 60px;
+   margin-left: 250px;
 }
 
+.contacto-info img{
+   vertical-align: middle; 
+   margin-right: 10px;
+}
+
+footer{
+    background: #2F2F2F;
+    padding: 40px 0;
+    text-align: center;
+    margin-top:40px;
+}
+
+footer .contenedor{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+footer img{
+margin: 0 40px;
+transform: rotate(0);
+transition: 0.4s;
+width: 3%;
+}
+
+footer img:hover{
+transform: rotate(360deg);
+transition: 0.4s;
+
+}
+
+footer .parrafo{
+    color: white;
+}
+
+#whatsapp{
+    position: fixed;
+    top:80%;
+    right: -50%;
+
+    
+}
+
+#whatsapp img{
+    width: 10%;
+}
 
 
     
