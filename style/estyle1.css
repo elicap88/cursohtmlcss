@@ -43,7 +43,7 @@ header{
   display: flex;
   justify-content: center;
   color: white;
-  margin: 18vh ;
+  margin: 10vh ;
   font-size: 25px;
   
 
@@ -93,6 +93,7 @@ h3{
     text-align: center;
     font-size: 55px;
     font-weight: normal;
+    
 }
 
 #sobre-mi .contenedor-sobremi{
@@ -110,6 +111,7 @@ justify-content: space-around;
 display: flex;
 flex-wrap: wrap;
 justify-content: space-around;
+margin-left: 12%;
 }
 
 .servicio{
@@ -128,6 +130,9 @@ h4{
 .servicio p{
   height: 194;  
  
+}
+#servT{
+    margin-left: 15%;
 }
 
 .imgI{
@@ -226,6 +231,7 @@ button.owl-prev, button.owl-next {
     font-size: 23px;
     margin-bottom: 14px;
 }
+
 
 
 #blog p{
@@ -341,15 +347,27 @@ footer .parrafo{
 #whatsapp{
     position: fixed;
     top:80%;
-    right: -50%;
+    left: 90%;
 
     
 }
 
 #whatsapp img{
-    width: 10%;
+    width: 35%;
 }
 
+
+#por-que-trabajar,#contacto,#mis-trabajos{
+    margin-left: 10%;
+}
+
+.contenedor-publicaciones{
+    margin-left: 10%;
+}
+
+.redes,.parrafo{
+    margin-left: 10%;
+}
 
     
 
