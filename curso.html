@@ -4,7 +4,7 @@
 <head>
     <title>Curso Eliana Pina</title>
     <link href="style/estyle1.css" rel="stylesheet">
-    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no" charset="UTF-8">
     <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="owl/owl.carousel.min.css">
     <link rel="stylesheet" href="owl/owl.theme.default.min.css">
@@ -17,13 +17,14 @@
         <div class="menu">
             <div class="contenedor">
                 <p class="logo">Eliana Piña</p>
+                <img src="images/boton-de-menu-de-tres-lineas-horizontales.png" class="imgMenu">
                 <nav>
                     <ul>
-                        <li><a>Sobre mi</a></li>
-                        <li><a>Mis trabajos</a></li>
-                        <li><a>Por qué trabajar conmigo?</a></li>
-                        <li><a>Blog</a></li>
-                        <li><a>Contacto</a></li>
+                        <li><a href="#sobre-mi">Sobre mi</a></li>
+                        <li><a href="#mis-trabajos">Mis trabajos</a></li>
+                        <li><a href="#por-que-trabajar">Por qué trabajar conmigo?</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
                     </ul>
                 </nav>
             </div>
@@ -244,10 +245,10 @@
                 <div class="contacto-info">
                     <div class="mail">
                        
-                        <img style="width: 5%" src="images/correo.png"> elizid@gmail.com
+                        <img id="imgContacto" src="images/correo.png"> elizid@gmail.com
                     </div>
                     <div class="whatsapp">
-                        <img style="width: 5%" src="images/whatsapp.png"> 0424-xxxxxxx
+                        <img id="imgContacto" src="images/whatsapp.png"> 0424-xxxxxxx
 
                     </div>
                 </div>
@@ -296,6 +297,34 @@
                 }
             }
         })
+    </script>
+    <script>
+        $(document).ready(function(){
+            $(window).scroll(function(){
+                scroll = $(window).scrollTop();
+                if(scroll > 100){
+                 $('.menu').css({"position":"fixed"});
+                 $('.menu').css({"width":"100%"});
+                 $('.menu').css({"top":"0"});
+                 $('.menu').css({"background":"#fff"});
+                 $('.menu a').css({"color":"#000"});
+                 $('.logo').css({"color":"#000"});
+                 $('.menu').css({"box-shadow":"1px 1px 1px 1 px"});
+                 $('.menu').css({"z-index":"100"});
+                }
+                else{
+                    $('.menu').css({"position":"relative"});
+                    $('.menu').css({"background":"transparant"});
+                    $('.menu').css({"box-shadow":"0px 0px 0px 0px"});
+                    $('.menu').css({"background":"#000"});
+                 $('.menu a').css({"color":"#fff"});
+                }
+            })
+            $(".imgMenu").click(function(){
+              $('header nav').slideToggle();
+            })
+        }
+        )
     </script>
 </body>
 
